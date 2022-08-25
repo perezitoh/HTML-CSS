@@ -30,7 +30,7 @@ html {
 }
 
 .separador {
-  margin-top: 90px;
+  margin-top: 8%;
   display: flex;
   width: 50%;
   height: 5px;
@@ -190,6 +190,7 @@ li a:hover {
 }
 
 .titulo {
+  margin: 10%;
   margin-top: 15%;
   font-size: 40px;
   color: var(--lightgrey);
@@ -197,17 +198,30 @@ li a:hover {
 }
 
 .modelo-titulo {
-  margin-top: 15%;
+  margin: 15px;
   font-size: 40px;
   color: var(--lightgrey);
   text-align: center;
   text-decoration: underline var(--green);
 }
 
-.modelo-descripcion {
+.descripcion1 {
+  width: 65%;
+  color: black;
+  font-size: 20px solid;
+  background-color: var(--grey);
+  border: var(--green) 2px solid;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.descripcion2 {
   color: var(--lightgrey);
   font-size: 20px solid;
-  background-color: #ffffff;
+  background-color: #d12929;
+  margin-bottom: 12%;
+  text-align: center;
 }
 
 .img-galeria {
@@ -311,9 +325,85 @@ li a:hover {
   box-shadow: 0px 1px 10px rgba(241, 239, 73, 0.726);
 }
 
+/* servicios */
+
+.servicio-container {
+  margin-top: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-servicio {
+  width: 40%;
+  margin: 15px;
+  font-size: 30px;
+  color: var(--lightgrey);
+  text-align: left;
+}
+
+
+.form-container {
+  width: 80%;
+  max-width: 300px;
+}
+
+.form-grup {
+  margin-top: 9%;
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  background: none;
+  color: var(--lightgrey);
+  font-size: 10px;
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(255, 251, 251);
+}
+
+.form-label {
+  color: var(--lightgrey);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(15px);
+  transition: transform 0.5s color 0.3s;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-15px) scale(0.7);
+  transform-origin: left top;
+  color: var(--green);
+}
+
+.form-submit {
+  background-color: var(--green);
+  color: var(--lightgrey);
+  margin-top: 10%;
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+
+
+/* footer */
 
 footer {
-  height: 300px;
   margin-top: 7%;
+  height: 300px;
   background-color: var(--grey);
 }
