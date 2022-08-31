@@ -349,7 +349,6 @@ li a:hover {
   text-align: left;
 }
 
-
 .form-container {
   width: 80%;
   max-width: 300px;
@@ -398,12 +397,166 @@ li a:hover {
   border-radius: 20px;
 }
 
-
-
 /* footer */
 
 footer {
+  bottom: 0;
+  min-width: 300px;
+  align-items: center;
   margin-top: 7%;
-  height: 300px;
+  width: 100%;
   background-color: var(--grey);
+  display: flex;
+  justify-content: space-between;
 }
+
+.redes {
+  color: var(--lightgrey);
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.redes a:visited {
+  color: var(--white);
+}
+
+.redes a:hover {
+  font-weight: 600;
+  color: black;
+  text-decoration: underline var(--green);
+}
+
+.horarios {
+  background-color: black;
+  display: flex;
+  max-width: 300px;
+  width: 100%;
+  font-size: 11px;
+  color: var(--lightgrey);
+  text-align: center;
+  justify-content: center;
+}
+
+.horario-tabla p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: var(--green);
+  text-decoration: underline;
+  background-color: black;
+}
+
+.horario-tabla li {
+  cursor: none;
+  margin-bottom: 5px;
+}
+
+.map {
+  margin: 15px;
+}
+
+/* Registro */
+
+.registrate {
+  background-color: rgb(24, 23, 23);
+  margin:50px auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 70px 50px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px -5px rgb 0 0 0 / 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.formulario-registro {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid var(--green);
+}
+
+button {
+  color: var(--green);
+  font-weight: 790;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid var(--lightgrey);
+}
+button:active {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+/* Login */
+
+.formulario {
+  text-align: center;
+  background-color: rgb(24, 23, 23);
+  margin:50px auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 70px 50px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px -5px rgb 0 0 0 / 30%;
+}
+
+.formu-titulo {
+  color: var(--lightgrey);
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.form-parrafo {
+  color: var(--lightgrey);
+  font-weight: 200;
+}
+
+.form-parrafo a {
+  color: var(--green);
+  font-weight: 400;
+}
+
+.form-container {
+  margin-top: 50px;
+  display: grid;
+  justify-items: start;
+  gap: 40px;
+}
+
+.formgrup {
+  position: relative;
+  color: var(--lightgrey);
+}
+
+.form-input {
+  width: 90%;
+  background: none;
+  color: var(--white);
+  font-size: 15px;
+  padding: 15px 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--lightgrey);  
+}
+
+.form-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--green);
+}
+
+.form-submit {
+  background-color: var(--green);
+} 
+
