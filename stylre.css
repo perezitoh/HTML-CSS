@@ -420,7 +420,7 @@ footer {
   gap: 5px;
   cursor: pointer;
 }
-.redes:link {
+.redes a:link {
   color: var(--white);
 }
 
