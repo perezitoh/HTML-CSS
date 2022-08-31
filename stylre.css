@@ -420,6 +420,9 @@ footer {
   gap: 5px;
   cursor: pointer;
 }
+.redes:link {
+  color: var(--white);
+}
 
 .redes a:visited {
   color: var(--white);
